@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Status</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Monitor Status</h2>
+    <table class="table table-success table-striped" id="statusTable">
+        <thead>
+        <tr>
+            <th>Server Name</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <form id="addDataForm">
+        <div class="form-group">
+            <label for="serverName">Server Name:</label>
+            <input type="text" class="form-control" id="serverName" name="serverName">
+        </div>
+        <div class="form-group">
+            <label for="serverURL">Server URL:</label>
+            <input type="text" class="form-control" id="serverURL" name="serverURL">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Server Data</button>
+    </form>
+</div>
+<script src="monitor.js"></script>
+</body>
+</html>
